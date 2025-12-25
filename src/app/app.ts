@@ -1,12 +1,22 @@
-import { Component, signal } from '@angular/core';
+import {
+  ApplicationConfig,
+  ChangeDetectionStrategy,
+  Component,
+  provideBrowserGlobalErrorListeners,
+  signal,
+} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+export const appConfig = {
+  providers: [provideBrowserGlobalErrorListeners()],
+} satisfies ApplicationConfig;
+
 @Component({
-  selector: 'app-root',
+  selector: 'meow-app',
   imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css',
+  template: `<router-outlet />`,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class App {
-  protected readonly title = signal('meowfacts');
+  protected readonly title = signal('meow-facts');
 }
