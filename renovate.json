@@ -17,8 +17,6 @@
   ],
   "printConfig": true,
   "labels": ["renovate"],
-  "onboarding": false,
-  "requireConfig": "ignored",
   "autoApprove": true,
   "enabledManagers": ["npm", "custom.regex"],
   "packageRules": [
