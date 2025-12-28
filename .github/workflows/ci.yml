@@ -32,6 +32,10 @@ jobs:
 
       - run: pnpm i
 
+      - uses: ./.github/actions/install-playwright
+
+      - run: pnpm renovate-config-validator --strict
+
       - run: pnpm ng lint
 
       - run: pnpm ng build
