@@ -7,9 +7,10 @@ import { MeowFact } from '../data/types';
   selector: 'meow-fact-card',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [MatCard, MatCardContent, NgOptimizedImage],
-  template: `<mat-card class="max-w-sm m-auto bg-mat-sys-primary-container" appearance="outlined">
-    <mat-card-content>
-      <p class="mat-sys-title-large text-mat-sys-on-primary-container">
+
+  template: `<mat-card class="bg-mat-sys-primary-container" appearance="outlined">
+    <mat-card-content class="text-mat-sys-on-primary-container">
+      <p>
         {{ fact() }}
       </p>
     </mat-card-content>

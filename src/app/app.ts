@@ -33,6 +33,7 @@ export const MEOW_FACTS_APP_CONFIGURATION = {
     <main class="flex flex-col gap-6">
       @for (fact of store.all.value(); track fact) {
         <meow-fact-card
+          class="max-w-sm"
           [fact]="fact"
           [image]="'cats/' + ($index % store.imageCollectionSize) + '.png'"
           [imagePriority]="$index <= 1"
