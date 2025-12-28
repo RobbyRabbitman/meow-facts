@@ -1,0 +1,10 @@
+dist
+tmp
+
+node_modules
+.angular/cache
+
+coverage
+
+.DS_Store
+Thumbs.db
