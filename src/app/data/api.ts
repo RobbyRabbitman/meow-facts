@@ -1,11 +1,6 @@
 import { HttpParams, httpResource } from '@angular/common/http';
 import { inject, Injectable, InjectionToken, Provider } from '@angular/core';
-import {
-  GetMeowFactRequestParams,
-  GetMeowFactsRequestParams,
-  GetMeowFactsResponse,
-  MeowFact,
-} from './types';
+import { GetMeowFactsRequestParams, GetMeowFactsResponse, MeowFact } from './types';
 
 export interface MeowFactsApiOptions {
   baseUrl: string;
@@ -33,7 +28,9 @@ export class MeowFactsApi {
   many(options?: () => Partial<GetMeowFactsRequestParams>) {
     return httpResource<MeowFact[]>(
       () => {
-        const { count, lang } = options?.() ?? {};
+        const { count, lang } = {
+          ...options?.(),
+        };
 
         let params = new HttpParams();
 
@@ -51,30 +48,6 @@ export class MeowFactsApi {
         };
       },
       { defaultValue: [], parse: (body) => (body as GetMeowFactsResponse).data },
-    );
-  }
-
-  one(options?: () => Partial<GetMeowFactRequestParams>) {
-    return httpResource<MeowFact>(
-      () => {
-        const { id, lang } = options?.() ?? {};
-
-        let params = new HttpParams();
-
-        if (lang != null) {
-          params = params.set('lang', lang);
-        }
-
-        if (id != null) {
-          params = params.set('id', id);
-        }
-
-        return {
-          url: this.options.baseUrl,
-          params,
-        };
-      },
-      { parse: (body) => (body as GetMeowFactsResponse).data[0] },
     );
   }
 }

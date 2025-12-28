@@ -5,11 +5,6 @@ export interface GetMeowFactsRequestParams {
   count?: number;
 }
 
-export interface GetMeowFactRequestParams {
-  id?: string;
-  lang?: string;
-}
-
 export interface GetMeowFactsResponse {
   data: MeowFact[];
 }
