@@ -18,7 +18,7 @@
   "printConfig": true,
   "labels": ["renovate"],
   "autoApprove": true,
-  "enabledManagers": ["npm", "custom.regex"],
+  "enabledManagers": ["npm", "custom.regex", "github-actions"],
   "packageRules": [
     {
       "description": "Update renovate itself once a week",
