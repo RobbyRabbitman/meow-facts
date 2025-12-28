@@ -30,6 +30,8 @@ jobs:
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
 
+      - uses: ./.github/actions/install-playwright
+
       - run: pnpm i
 
       - run: pnpm ng lint
