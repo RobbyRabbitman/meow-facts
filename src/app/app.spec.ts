@@ -1,11 +1,11 @@
 import { TestBed } from '@angular/core/testing';
-import { App } from './app';
+import { MeowFactsApp } from './app';
 
-describe('App', () => {
-  it('should create the app', async () => {
-    const test = TestBed.createComponent(App);
+describe('MeowFactsApp', () => {
+  it('should create', async () => {
+    const test = TestBed.createComponent(MeowFactsApp);
     await test.whenStable();
 
-    expect(test.componentInstance).toBeTruthy();
+    expect(test.componentInstance).toBeInstanceOf(MeowFactsApp);
   });
 });

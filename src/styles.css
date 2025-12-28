@@ -1,1 +1,6 @@
-@import 'tailwindcss';
+@import './tailwind.css';
+
+body {
+  color-scheme: light dark;
+  @apply min-h-screen bg-mat-sys-surface text-mat-sys-on-surface font-mat-sys-body-medium;
+}

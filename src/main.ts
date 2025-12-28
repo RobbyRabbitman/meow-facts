@@ -1,4 +1,4 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { App, appConfig } from './app/app';
+import { MEOW_FACTS_APP_CONFIGURATION, MeowFactsApp } from './app/app';
 
-bootstrapApplication(App, appConfig).catch(console.error);
+bootstrapApplication(MeowFactsApp, MEOW_FACTS_APP_CONFIGURATION).catch(console.error);
