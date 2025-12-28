@@ -1,0 +1,39 @@
+name: ci
+
+on:
+  pull_request:
+
+concurrency:
+  group: ${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: |
+          npm i -g corepack@${{ env.COREPACK_VERSION }}
+          corepack enable
+        env:
+          # renovate: datasource=npm depName=corepack
+          COREPACK_VERSION: "0.34.0"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: package.json
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - run: pnpm i
+
+      - run: pnpm ng lint
+
+      - run: pnpm ng build
+
+      - run: pnpm ng test
