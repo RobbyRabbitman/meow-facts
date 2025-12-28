@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@10.26.2",
+  "engines": {
+    "node": "v22.14.0"
+  },
   "type": "module",
   "dependencies": {
     "@angular/cdk": "21.0.5",
