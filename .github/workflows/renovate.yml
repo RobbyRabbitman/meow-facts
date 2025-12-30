@@ -30,7 +30,7 @@ jobs:
       # pull requests: write
       # workflows: write
       # email addresses: read
-      - uses: actions/create-github-app-token@v1
+      - uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2
         id: create-renovate-app-token
         with:
           app-id: ${{ vars.RENOVATE_APP_ID }}
