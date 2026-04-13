@@ -33,7 +33,7 @@
     "eslint": "10.2.0",
     "playwright": "1.59.1",
     "postcss": "8.5.9",
-    "prettier": "3.8.1",
+    "prettier": "3.8.2",
     "prettier-plugin-jsdoc": "1.8.0",
     "renovate": "43.104.2",
     "tailwindcss": "4.2.2",
