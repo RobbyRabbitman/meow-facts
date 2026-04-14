@@ -26,9 +26,9 @@
     "@angular/compiler-cli": "21.2.8",
     "@eslint/js": "10.0.1",
     "@tailwindcss/postcss": "4.2.2",
-    "@vitest/browser-playwright": "4.1.2",
-    "@vitest/coverage-v8": "4.1.2",
-    "@vitest/ui": "4.1.2",
+    "@vitest/browser-playwright": "4.1.4",
+    "@vitest/coverage-v8": "4.1.4",
+    "@vitest/ui": "4.1.4",
     "angular-eslint": "21.3.1",
     "eslint": "10.2.0",
     "playwright": "1.59.1",
@@ -39,7 +39,7 @@
     "tailwindcss": "4.2.2",
     "typescript": "5.9.3",
     "typescript-eslint": "8.58.1",
-    "vitest": "4.1.2"
+    "vitest": "4.1.4"
   },
   "scripts": {
     "lint": "ng lint",
