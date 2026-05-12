@@ -25,7 +25,7 @@
     "@angular/cli": "21.2.10",
     "@angular/compiler-cli": "21.2.12",
     "@eslint/js": "10.0.1",
-    "@tailwindcss/postcss": "4.2.4",
+    "@tailwindcss/postcss": "4.3.0",
     "@vitest/browser-playwright": "4.1.5",
     "@vitest/coverage-v8": "4.1.5",
     "@vitest/ui": "4.1.5",
@@ -36,7 +36,7 @@
     "prettier": "3.8.3",
     "prettier-plugin-jsdoc": "1.8.0",
     "renovate": "43.150.0",
-    "tailwindcss": "4.2.4",
+    "tailwindcss": "4.3.0",
     "typescript": "5.9.3",
     "typescript-eslint": "8.59.2",
     "vitest": "4.1.5"
