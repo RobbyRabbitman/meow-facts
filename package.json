@@ -32,7 +32,7 @@
     "angular-eslint": "21.4.0",
     "eslint": "10.4.0",
     "playwright": "1.60.0",
-    "postcss": "8.5.14",
+    "postcss": "8.5.15",
     "prettier": "3.8.3",
     "prettier-plugin-jsdoc": "1.8.0",
     "renovate": "43.150.0",
