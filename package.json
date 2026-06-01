@@ -34,7 +34,7 @@
     "playwright": "1.60.0",
     "postcss": "8.5.15",
     "prettier": "3.8.3",
-    "prettier-plugin-jsdoc": "1.8.0",
+    "prettier-plugin-jsdoc": "1.8.1",
     "renovate": "43.150.0",
     "tailwindcss": "4.3.0",
     "typescript": "5.9.3",
