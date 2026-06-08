@@ -35,7 +35,7 @@
     "postcss": "8.5.15",
     "prettier": "3.8.3",
     "prettier-plugin-jsdoc": "1.8.1",
-    "renovate": "43.204.1",
+    "renovate": "43.213.2",
     "tailwindcss": "4.3.0",
     "typescript": "5.9.3",
     "typescript-eslint": "8.60.1",
